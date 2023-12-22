@@ -7,11 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Users\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.24" />
+    <PackageReference Include="Npgsql" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarSale.Application\CarSale.Application.csproj" />
+    <ProjectReference Include="..\CarSale.Domain\CarSale.Domain.csproj" />
   </ItemGroup>
 
 </Project>
